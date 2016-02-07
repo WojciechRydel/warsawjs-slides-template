@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="themes/warsawjs/styles/ribbon-theme.css">
     <link rel="stylesheet" href="themes/warsawjs/styles/warsawjs-theme.css">
+    <link rel="stylesheet" type="text/css" href="themes/warsawjs/styles/custom.css">
 </head>
 <body class="list">
     <header class="caption">
@@ -24,114 +25,143 @@
             </div>
             <div class="details">
                 <!-- 1. Avatar -->
-                <img src="pictures/speaker.jpg" alt="Speaker" />
+                <img src="pictures/picture.jpg" alt="Speaker" width="200" height="200" />
 
                 <!-- 2. Speaker -->
-                <h2>Speaker name</h2>
+                <h2>Wojciech Rydel</h2>
 
                 <!-- 3. Presentation title -->
-                <h2><strong>"WarsawJS Slides: Template"</strong></h2>
+                <h2><strong>Universal JavaScript web applications with React</strong></h2>
 
                 <!-- 4. Presentation date -->
-                <h2>XXXX-XX-XX</h2>
+                <h2>2016-02-10</h2>
 
                 <!-- 5. Contact the speaker -->
-                <h2><a href="http://twitter.com/speaker">@speaker</a></h2>
+                <!-- <h2><a href="http://twitter.com/speaker">@speaker</a></h2> -->
             </div>
         </div>
     </section>
 
     <section class="slide">
         <div>
-            <h2>Plain Text on Your Slides</h2>
+            <h2>What we will talk about:</h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco
-                laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in
-                reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.
-            </p>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div>
-            <h2>All Kind of Lists</h2>
             <ol>
-                <li>Simple lists are marked with bullets</li>
-                <li>Ordered lists begin with a number</li>
-                <li>You can even nest lists one inside another
-                    <ul>
-                        <li>Or mix their types</li>
-                        <li>But do not go too far</li>
-                        <li>Otherwise audience will be bored</li>
-                    </ul>
-                </li>
-                <li>Look, seven rows exactly!</li>
+                <li>Isomorphic or Universal JS - what does it mean?</li>
+                <li>Classic JS client side app</li>
+                <li>Universal JS app</li>
+                <li>Server side React rendering</li>
+                <li>React single page app - server side routing</li>
             </ol>
         </div>
     </section>
 
     <section class="slide">
         <div>
-            <h2>JavaScript Samples</h2>
-            <pre>
-                <code><mark class="comment">// Crockford style IIFE</mark></code>
-                <code>(function () {</code>
-                <code>  var <mark>someVar</mark> = 'value';</code>
-                <code>  console.<mark class="important">log</mark>(someVar);</code>
-                <code>}());</code>
-            </pre>
+            <h2>Isomorphic or Universal - what does it mean?</h2>
+            
+            <h4><strong>Isomorphic JS</strong></h4>
+            <p>Process or output is the same, but different implementation - e.g. Underscore and Lodash</p>
+            <hr/>
+            <h4><strong>Universal JS</strong></h4>
+            <p>The same code run both client and server side.</p>
+
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>Classic JS client side app</h2>
+            <div>
+                <div class="inline-half inline-half-right">
+                    <img src="pictures/Client_side_architecture.jpg" height="450">
+                </div>
+            <div class="inline-half inline-half-left">
+                <h3><strong>Advanteges</strong></h3>
+                <ul>
+                    <li>Whole app lives in the client</li>
+                    <li>Independed from server side</li>
+                </ul>
+                <h4><strong>Disadavnteges</strong></h4>
+                <ul>
+                    <li>Cannot serve HTML to crawlers</li>
+                    <li>Low performance of initial HTML rendering</li>
+                </ul>
+            </div>
+            </div>
         </div>
     </section>
     <section class="slide">
         <div>
-            <h2>Even Tables</h2>
-            <table>
-                <tr>
-                    <th scope="col">Locavore</th>
-                    <th>Umami</th>
-                    <th>Helvetica</th>
-                    <th>Vegan</th>
-                </tr>
-                <tr>
-                    <th scope="row">Fingerstache</th>
-                    <td>Kale</td>
-                    <td>Chips</td>
-                    <td>Keytar</td>
-                </tr>
-                <tr>
-                    <th scope="row">Sriracha</th>
-                    <td>Gluten-free</td>
-                    <td>Ennui</td>
-                    <td>Keffiyeh</td>
-                </tr>
-                <tr>
-                    <th scope="row">Thundercats</th>
-                    <td>Jean</td>
-                    <td>Shorts</td>
-                    <td>Biodiesel</td>
-                </tr>
-                <tr>
-                    <th scope="row">Terry</th>
-                    <td>Richardson</td>
-                    <td>Swag</td>
-                    <td>Blog</td>
-                </tr>
-            </table>
-            <p>It’s good to have information organized.</p>
+            <h2>Universal JS app</h2>
+            <div class="inline-half inline-half-right">
+                <img src="pictures/universal_architecture.jpg">
+            </div>
+            <div class="inline-half inline-half-left">
+                <h3><strong>Advanteges</strong></h3>
+                <ul>
+                    <li>Better performance</li>
+                    <li>SEO by default</li>
+                </ul>
+                <h4><strong>Disadavnteges</strong></h4>
+                <ul>
+                    <li>Additional logic in the server side</li>
+                    <li>Need to use JavaScript on the server side</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <section class="slide cover">
+    <section class="slide">
         <div>
-            <img src="pictures/bigphoto.jpg" alt="">
+            <h2>Here comes React</h2>
+            <pre style="font-size: 75%;">
+                <code>...</code>
+                <code>import ReactDOM from 'react-dom/server'</code>
+                <code>import HTML from 'components/HTML'</code>
+                <code>   </code>
+                <code>const app = new Express()</code>
+                <code>const server = new http.Server(app)</code>
+                <code>    </code>
+                <code>app.use((request, response, next) => {</code>
+                <code>  response.send('&lt;!doctype html&gt;\n' + ReactDOM.renderToString(&lt;HTML /&gt;))</code>
+                <code>})</code>
+                <code>...</code>
+            </pre>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>What about Single Page Application?</h2>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>React single page app - server side routing</h2>
+            <pre style="font-size: 65%">
+                <code>...</code>
+                <code>import ReactDOM from 'react-dom/server'</code>
+                <code>import {match, RouterContext} from 'react-router'</code>
+                <code>import routes from './routes'</code>
+                <code>...</code>
+                <code>app.use((request, response) => {</code>
+                <code>  match({routes, location: request.url}, (error, redirectLocation, renderProps) => {</code>
+                <code>    if (error) {</code>
+                <code>      response.status(500).send(error.message)</code>
+                <code>    } else if (renderProps) {</code>
+                <code>      response.send(ReactDOM.renderToString(&lt;RouterContext {...renderProps} /&gt;))</code>
+            </pre>
         </div>
     </section>
 
     <section class="slide shout">
         <div>
             <h2>See you next month at WarsawJS</h2>
+            <pre style="font-size: 65%;">
+                <code></code>
+            </pre>
         </div>
     </section>
 

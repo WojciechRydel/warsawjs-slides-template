@@ -1,0 +1,12 @@
+.inline-half {
+	display: inline-block;
+	width: 50%;
+}
+
+.inline-half-left {
+	float: left;
+}
+
+.inline-half-right {
+	float: right;
+}
