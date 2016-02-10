@@ -123,7 +123,7 @@
                 <code>const app = new Express()</code>
                 <code>const server = new http.Server(app)</code>
                 <code>    </code>
-                <code>app.use((request, response, next) => {</code>
+                <code>app.get('*', (request, response) => {</code>
                 <code>  response.send('&lt;!doctype html&gt;\n' + ReactDOM.renderToString(&lt;HTML /&gt;))</code>
                 <code>})</code>
                 <code>...</code>
