@@ -153,7 +153,7 @@
                 <code>import {match, RouterContext} from 'react-router'</code>
                 <code>import routes from './routes'</code>
                 <code>...</code>
-                <code>app.use((request, response) => {</code>
+                <code>app.get('*', (request, response) => {</code>
                 <code>  match({routes, location: request.url}, (error, redirectLocation, renderProps) => {</code>
                 <code>    if (error) {</code>
                 <code>      response.status(500).send(error.message)</code>
