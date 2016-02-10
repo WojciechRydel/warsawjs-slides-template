@@ -1,5 +1,5 @@
 # WarsawJS Slides: Template
-
+## WarsawJS #18 10.02.2016 - Universal JavaScript web applications with React
 ![Logo](/pictures/logo/logo-light.png)
 
 ---
